@@ -1,0 +1,374 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/playpause/actions/playpause",
+      "Name": "Play/pause",
+      "States": [
+        {
+          "Image": "images/playpause/keys/playpause",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Toggle play/pause of playback.",
+      "UUID": "com.samhorne.mediamonkey5.playpause"
+    },
+    {
+      "Icon": "images/play/actions/play",
+      "Name": "Play",
+      "States": [
+        {
+          "Image": "images/play/keys/play",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Start playback.",
+      "UUID": "com.samhorne.mediamonkey5.play"
+    },
+    {
+      "Icon": "images/pause/actions/pause",
+      "Name": "Pause",
+      "States": [
+        {
+          "Image": "images/pause/keys/pause",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Pause playback.",
+      "UUID": "com.samhorne.mediamonkey5.pause"
+    },
+    {
+      "Icon": "images/skip/actions/skipforward",
+      "Name": "Skip forward.",
+      "States": [
+        {
+          "Image": "images/skip/keys/skipforward",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Skip to the next song.",
+      "UUID": "com.samhorne.mediamonkey5.skipforward"
+    },
+    {
+      "Icon": "images/skip/actions/skipbackward",
+      "Name": "Skip backward",
+      "States": [
+        {
+          "Image": "images/skip/keys/skipbackward",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Skip to the previous song.",
+      "UUID": "com.samhorne.mediamonkey5.skipbackward"
+    },
+    {
+      "Icon": "images/stop/actions/stop",
+      "Name": "Stop",
+      "States": [
+        {
+          "Image": "images/stop/keys/stop",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Stop playback.",
+      "UUID": "com.samhorne.mediamonkey5.stop"
+    },
+    {
+      "Icon": "images/rating/actions/rating",
+      "Name": "Rating",
+      "States": [
+        {
+          "Image": "images/rating/keys/rating",
+          "TitleAlignment": "middle",
+          "FontSize": "13"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Display rating of current track.",
+      "UUID": "com.samhorne.mediamonkey5.rating"
+    },
+    {
+      "Icon": "images/rating/actions/increaserating",
+      "Name": "Increase rating",
+      "States": [
+        {
+          "Image": "images/rating/keys/increaserating",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Increase rating of current track.",
+      "UUID": "com.samhorne.mediamonkey5.increaserating"
+    },
+    {
+      "Icon": "images/rating/actions/decreaserating",
+      "Name": "Decrease rating",
+      "States": [
+        {
+          "Image": "images/rating/keys/decreaserating",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Decrease rating of current track.",
+      "UUID": "com.samhorne.mediamonkey5.decreaserating"
+    },
+    {
+      "Icon": "images/nowplaying/actions/nowplaying",
+      "Name": "Now playing",
+      "States": [
+        {
+          "Image": "images/nowplaying/keys/nowplaying",
+          "TitleAlignment": "middle",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Show information of currently track.",
+      "UUID": "com.samhorne.mediamonkey5.nowplaying"
+    },
+    {
+      "Icon": "images/time/actions/time",
+      "Name": "Time",
+      "States": [
+        {
+          "Image": "images/time/keys/time",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        },
+        {
+          "Image": "images/ring/keys/ring",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Show current playback time and track length.",
+      "UUID": "com.samhorne.mediamonkey5.time"
+    },
+    {
+      "Icon": "images/repeat/actions/repeatplaylist",
+      "Name": "Repeat",
+      "States": [
+        {
+          "Image": "images/repeat/keys/repeatnone",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        },
+        {
+          "Image": "images/repeat/keys/repeatone",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        },
+        {
+          "Image": "images/repeat/keys/repeatplaylist",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Cycle though repeat status.",
+      "UUID": "com.samhorne.mediamonkey5.repeat"
+    },
+    {
+      "Icon": "images/shuffle/actions/shuffleon",
+      "Name": "Shuffle",
+      "States": [
+        {
+          "Image": "images/shuffle/keys/shuffleon",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        },
+        {
+          "Image": "images/shuffle/keys/shuffleoff",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Toggle shuffle.",
+      "UUID": "com.samhorne.mediamonkey5.shuffle"
+    },
+    {
+      "Icon": "images/volume/actions/volume",
+      "Name": "Mute",
+      "States": [
+        {
+          "Image": "images/volume/keys/mute",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        },
+        {
+          "Image": "images/volume/keys/volume",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Toggle mute.",
+      "UUID": "com.samhorne.mediamonkey5.mute"
+    },
+    {
+      "Icon": "images/volume/actions/volumeup",
+      "Name": "Volume up",
+      "States": [
+        {
+          "Image": "images/volume/keys/volumeup",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Increase volume.",
+      "UUID": "com.samhorne.mediamonkey5.volumeup"
+    },
+    {
+      "Icon": "images/volume/actions/volumedown",
+      "Name": "Volume down",
+      "States": [
+        {
+          "Image": "images/volume/keys/volumedown",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Decrease volume.",
+      "UUID": "com.samhorne.mediamonkey5.volumedown"
+    },
+    {
+      "Icon": "images/seek/actions/seekforward",
+      "Name": "Seek forwards",
+      "States": [
+        {
+          "Image": "images/seek/keys/seekforward",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Seek forwards.",
+      "UUID": "com.samhorne.mediamonkey5.seekforward"
+    },
+    {
+      "Icon": "images/seek/actions/seekbackward",
+      "Name": "Seek backwards",
+      "States": [
+        {
+          "Image": "images/seek/keys/seekbackward",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Seek backwards.",
+      "UUID": "com.samhorne.mediamonkey5.seekbackward"
+    },
+    {
+      "Icon": "images/playlist/actions/playlist",
+      "Name": "Playlist",
+      "States": [
+        {
+          "Image": "images/playlist/keys/playlist",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Play specified playlist.",
+      "UUID": "com.samhorne.mediamonkey5.playlist"
+    },
+    {
+      "Icon": "images/playartist/actions/playartist",
+      "Name": "Play artist",
+      "States": [
+        {
+          "Image": "images/playartist/keys/playartist",
+          "TitleAlignment": "middle",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Play specified artist.",
+      "UUID": "com.samhorne.mediamonkey5.playartist"
+    },
+    {
+      "Icon": "images/playalbum/actions/playalbum",
+      "Name": "Play album",
+      "States": [
+        {
+          "Image": "images/playalbum/keys/playalbum",
+          "TitleAlignment": "middle",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Play specified album.",
+      "UUID": "com.samhorne.mediamonkey5.playalbum"
+    },
+    {
+      "Icon": "images/playlist/actions/add",
+      "Name": "Add to playlist",
+      "States": [
+        {
+          "Image": "images/playlist/keys/add",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Add current track to specifed playlist.",
+      "UUID": "com.samhorne.mediamonkey5.addtoplaylist"
+    },
+    {
+      "Icon": "images/playlist/actions/remove",
+      "Name": "Remove from playlist",
+      "States": [
+        {
+          "Image": "images/playlist/keys/remove",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Remove current track from specifed playlist.",
+      "UUID": "com.samhorne.mediamonkey5.removefromplaylist"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Sam Horne",
+  "URL": "https://github.com/sam-horne/streamdeck-mediamonkey5",
+  "Category": "MediaMonkey5",
+  "CategoryIcon": "images/plugin/category",
+  "CodePath": "plugin/index.html",
+  "Description": "MediaMonkey 5 integration for streamdeck",
+  "Name": "Mediamonkey 5",
+  "Icon": "images/plugin/plugin",
+  "PropertyInspectorPath": "pi/index.html",
+  "Version": "1.0.0",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion" : "10"
+    }
+  ],
+  "Software": {"MinimumVersion" : "5.0"},
+  "ApplicationsToMonitor": {
+    "windows": [
+      "MediaMonkey.exe"
+    ]
+  }
+}

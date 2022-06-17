@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>com.samhorne.mediamonkey5.pi</title>
+    <link rel="stylesheet" type="text/css" href="styles/pi.css" />
+
+    <script src="../utils/websocketutils.js"></script>
+    <script src="../utils/defaults.js"></script>
+    <script src="js/propertyinspector.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div type="checkbox" class="sdpi-item start-hidden play-artist play-album" id="play-current" title="Use current track to determine tracks to play on button press.">
+      <div class="sdpi-item-label">Use playing track:</div>
+      <input class="sdpi-item-value" id="play-current-checkbox" type="checkbox">
+      <label for="play-current-checkbox"><span></span></label>
+    </div>
+
+    <div class="sdpi-item start-hidden play-artist-from-input play-album-from-input" id="artist-name" title="Artist to play on button press.">
+      <div class="sdpi-item-label">Artist Name:</div>
+      <input class="sdpi-item-value" id="artist-name-input">
+    </div>
+    <div class="sdpi-item start-hidden play-album-from-input" id="album-name" title="Album to play on button press.">
+      <div class="sdpi-item-label">Album Name:</div>
+      <input class="sdpi-item-value" id="album-name-input">
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden now-playing play-album play-album-from-current" id="display-artwork" title="Set button image based on album art of now playing track.">
+      <div class="sdpi-item-label">Show artwork:</div>
+      <input class="sdpi-item-value" id="display-artwork-checkbox" type="checkbox">
+      <label for="display-artwork-checkbox"><span></span></label>
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden now-playing" id="display-track-title" title="Set button title based on track title.">
+      <div class="sdpi-item-label">Show track title:</div>
+      <input class="sdpi-item-value" id="display-track-title-checkbox" type="checkbox">
+      <label for="display-track-title-checkbox"><span></span></label>
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden now-playing play-album" id="display-album" title="Set button title based on album.">
+      <div class="sdpi-item-label">Show album:</div>
+      <input class="sdpi-item-value" id="display-album-checkbox" type="checkbox">
+      <label for="display-album-checkbox"><span></span></label>
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden now-playing play-artist play-album" id="display-artist" title="Set button title based on artist.">
+      <div class="sdpi-item-label">Show artist:</div>
+      <input class="sdpi-item-value" id="display-artist-checkbox" type="checkbox">
+      <label for="display-artist-checkbox"><span></span></label>
+    </div>
+
+    <div class="sdpi-item start-hidden now-playing play-artist play-album" id="title-width" title="Number of characters shown before inserting newline in title text.">
+      <div class="sdpi-item-label">Max title width:</div>
+      <input class="sdpi-item-value" id="title-width-input" required pattern="^[1-9]\d*$">
+    </div>
+
+    <div class="sdpi-item start-hidden now-playing play-artist play-album" id="title-lines" title="Number of title lines shown before scrolling display.">
+      <div class="sdpi-item-label">Max title lines:</div>
+      <input class="sdpi-item-value" id="title-lines-input" required pattern="^[1-9]\d*$">
+    </div>
+
+    <div class="sdpi-item  start-hidden volume" id="volume-step" title="Volume step (percent).">
+      <div class="sdpi-item-label">Volume step (%):</div>
+      <input class="sdpi-item-value" id="volume-step-input" required pattern="(^\d*\.?\d*[1-9]+\d*$)|(^[1-9]+\d*\.\d*$)">
+    </div>
+
+    <div class="sdpi-item start-hidden seek" id="seek-step" title="Seek step (seconds).">
+      <div class="sdpi-item-label">Seek step (s):</div>
+      <input class="sdpi-item-value" id="seek-step-input" required pattern="(^\d*\.?\d*[1-9]+\d*$)|(^[1-9]+\d*\.\d*$)">
+    </div>
+
+    <div class="sdpi-item start-hidden playlist modify-playlist" id="playlist-name" title="Playlist to play on button press.">
+      <div class="sdpi-item-label">Playlist Name:</div>
+      <input class="sdpi-item-value" id="playlist-name-input">
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden playlist play-artist play-album" id="start-playback" title="Start playback of playlist when pressed.">
+      <div class="sdpi-item-label">Start playback:</div>
+      <input class="sdpi-item-value" id="start-playback-checkbox" type="checkbox">
+      <label for="start-playback-checkbox"><span></span></label>
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden playlist play-artist play-album" id="shuffle-playlist" title="Shuffle playlist when adding to now playing.">
+      <div class="sdpi-item-label">Shuffle playlist:</div>
+      <input class="sdpi-item-value" id="shuffle-playlist-checkbox" type="checkbox">
+      <label for="shuffle-playlist-checkbox"><span></span></label>
+    </div>
+
+    <div type="checkbox" class="sdpi-item start-hidden playlist play-artist" id="sort-by-album" title="Sort playlist by albums.">
+      <div class="sdpi-item-label">Sort by album:</div>
+      <input class="sdpi-item-value" id="sort-by-album-checkbox" type="checkbox">
+      <label for="sort-by-album-checkbox"><span></span></label>
+    </div>
+
+    <div class="sdpi-item start-hidden playlist play-artist play-album" id="playlist-position" title="Select where to insert new tracks to now playing list.">
+      <div class="sdpi-item-label">Position:</div>
+      <select class="sdpi-item-value" id="playlist-position-select">
+        <option value="Clear">Clear now playing</option>
+        <option value="Next">After next track</option>
+        <option value="Start">At start</option>
+        <option value="End">At end</option>
+      </select>
+    </div>
+
+    <hr>
+    <div class="pi-prop" id="general-info">
+      For more information visit the
+      <a id="git-link">Git</a> page.
+    </div>
+  </body>
+</html>

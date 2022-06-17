@@ -1,0 +1,91 @@
+html, body {
+  --sdpi-bgcolor: #2D2D2D;
+  --sdpi-background: #3D3D3D;
+  --sdpi-color: #d8d8d8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 9pt;
+  background-color: var(--sdpi-bgcolor);
+  color: #9a9a9a;
+}
+
+body {
+  margin: 0;
+}
+
+hr, hr2 {
+  border-style: none;
+  background: var(--sdpi-background);
+  height: 3px;
+}
+
+select {
+  color: var(--sdpi-color);
+  border: 1pt solid #303030;
+  font-size: 8pt;
+  background-color: var(--sdpi-background);
+}
+
+.sdpi-item > *:not(.sdpi-item-label):not(meter):not(details):not(canvas) {
+  min-height: 20px;
+  padding: 0px 4px 0px 4px;
+}
+
+.sdpi-item-label {
+  flex: none;
+  width: 120px;
+  padding-right: 4px;
+  padding-left: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.sdpi-item-value {
+  flex: 1 0 0;
+  margin-right: 14px;
+  margin-left: 4px;
+}
+
+input {
+  background: var(--sdpi-background);
+  color: var(--sdpi-color);
+  border: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 2px 4px 2px 0;
+  border-radius: 3px;
+  vertical-align: middle;
+  background: var(--sdpi-background);
+  cursor: pointer;
+  border: 1px solid rgb(0,0,0,.2);
+}
+
+input[type="checkbox"]:checked + label span {
+  background-color: #77f;
+}
+
+input:required:invalid{
+  background: var(--sdpi-background) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCA5IDkiPgogICAgPHBhdGggZmlsbD0iI0Q4RDhEOCIgZD0iTTQuNSwwIEM2Ljk4NTI4MTM3LC00LjU2NTM4NzgyZS0xNiA5LDIuMDE0NzE4NjMgOSw0LjUgQzksNi45ODUyODEzNyA2Ljk4NTI4MTM3LDkgNC41LDkgQzIuMDE0NzE4NjMsOSAzLjA0MzU5MTg4ZS0xNiw2Ljk4NTI4MTM3IDAsNC41IEMtMy4wNDM1OTE4OGUtMTYsMi4wMTQ3MTg2MyAyLjAxNDcxODYzLDQuNTY1Mzg3ODJlLTE2IDQuNSwwIFogTTQsMSBMNCw2IEw1LDYgTDUsMSBMNCwxIFogTTQuNSw4IEM0Ljc3NjE0MjM3LDggNSw3Ljc3NjE0MjM3IDUsNy41IEM1LDcuMjIzODU3NjMgNC43NzYxNDIzNyw3IDQuNSw3IEM0LjIyMzg1NzYzLDcgNCw3LjIyMzg1NzYzIDQsNy41IEM0LDcuNzc2MTQyMzcgNC4yMjM4NTc2Myw4IDQuNSw4IFoiLz4KICA8L3N2Zz4)  no-repeat 98% center;
+}
+
+input:required:valid {
+  background: var(--sdpi-background) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCA5IDkiPjxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iNS4yIDEgNi4yIDEgNi4yIDcgMy4yIDcgMy4yIDYgNS4yIDYiIHRyYW5zZm9ybT0icm90YXRlKDQwIDQuNjc3IDQpIi8+PC9zdmc+) no-repeat 98% center;
+}
+
+.start-hidden{
+  display: none;
+}
+
+#git-link {
+  cursor: pointer;
+  color: red;
+}
