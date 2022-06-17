@@ -1,19 +1,17 @@
 # Mediamonkey 5 Stream Deck integration
 
-> Control Mediamonkey 5 with real-time feedback on your Elgato Stream Deck device. \
-> \
+Control Mediamonkey 5 with real-time feedback on your Elgato Stream Deck device.
 
 <br>
 
 ![screenshot](images/docs/screenshot.PNG)
-
 <br>
 
 ## Installation
 
-1. Install [mediamonkey5](https://www.mediamonkey.com/download)
-2. Install one of the [releases](https://github.com/sam-horne/streamdeck-mediamonkey5/releases) of streamdeck-mediamonkey5
-3. Add desired actions to control Mediamonkey 5 from the streamdeck
+1. Install [mediamonkey5](https://www.mediamonkey.com/download).
+2. Install one of the [releases](https://github.com/sam-horne/streamdeck-mediamonkey5/releases) of streamdeck-mediamonkey5.
+3. Add desired actions to control Mediamonkey 5 from the streamdeck.
 
 ## Features
 * Control playback
