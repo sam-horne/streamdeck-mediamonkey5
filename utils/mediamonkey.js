@@ -211,8 +211,8 @@ const mediamonkey = {
     this.runInMediamonkey(`player.volume = ${newVolume};`);
   },
 
-  seek: function (newTime) {
-    this.runInMediamonkey(`player.seekMSAsync(${newTime*1e3});`);
+  seek: function (newTimeMS) {
+    this.runInMediamonkey(`player.seekMSAsync(${newTimeMS});`);
   },
 
   playPlaylist: function(playlistName,settings) {
