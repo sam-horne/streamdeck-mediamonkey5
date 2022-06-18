@@ -137,7 +137,7 @@
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "Show information of currently track.",
+      "Tooltip": "Show information of currently track and toggle play/pause on button press.",
       "UUID": "com.samhorne.mediamonkey5.nowplaying"
     },
     {
