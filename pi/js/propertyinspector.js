@@ -29,6 +29,9 @@ class PropertyInspector extends WebSocketUtils {
     } else if(action == actions.volumeup || action == actions.volumedown) {
       setupDisplay("volume");
       setupInput("volume-step-input","volumeStep",defaults.volumeStep,true)
+    } else if(action == actions.setvolume) {
+      setupDisplay("set-volume");
+      setupInput("set-volume-input","volume",defaults.volume,true)
     } else if(action == actions.seekforward || action == actions.seekbackward) {
       setupDisplay("seek");
       setupInput("seek-step-input","seekStep",defaults.seekStep,true)

@@ -346,6 +346,20 @@
       "SupportedInMultiActions": true,
       "Tooltip": "Remove current track from specifed playlist.",
       "UUID": "com.samhorne.mediamonkey5.removefromplaylist"
+    },
+    {
+      "Icon": "images/volume/actions/volume",
+      "Name": "Set volume",
+      "States": [
+        {
+          "Image": "images/ring/keys/ring",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Set volume to specified value.",
+      "UUID": "com.samhorne.mediamonkey5.setvolume"
     }
   ],
   "SDKVersion": 2,

@@ -15,6 +15,7 @@ let actions = {
   muteAction: new MuteAction(),
   volumeUpAction: new VolumeUpAction(),
   volumeDownAction: new VolumeDownAction(),
+  setVolumeAction: new SetVolumeAction(),
   seekForwardAction: new SeekForwardAction(),
   seekBackwardAction: new SeekBackwardAction(),
   playlistAction: new PlaylistAction(),

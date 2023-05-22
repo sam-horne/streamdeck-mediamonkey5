@@ -2,6 +2,7 @@ const defaults = {
   maxTitleWidth: 9,
   maxTitleLines: 4,
   volumeStep: 10,
+  volume: 100,
   seekStep: 10,
   playlistName: "",
   startPlayback: true,
