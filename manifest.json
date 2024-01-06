@@ -372,7 +372,7 @@
   "Name": "Mediamonkey 5",
   "Icon": "images/plugin/plugin",
   "PropertyInspectorPath": "pi/index.html",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "OS": [
     {
       "Platform": "windows",

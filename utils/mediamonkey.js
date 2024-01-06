@@ -16,7 +16,7 @@ const mediamonkey = {
   timeoutID: null,
   volume: null,
   mute: null,
-  timeoutTimeMS: 900,
+  timeoutTimeMS: 1000,
   _repeatStates: {name: ["none","one","all"],
                   repeatPlaylist: [false,true,true],
                   repeatOne: [false,true,false]
