@@ -217,6 +217,7 @@ const mediamonkey = {
 
   playPlaylist: function(playlistName,settings) {
     tracklistOptions = this.formatTracklistOptions(settings)
+    shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
       `app.playlists.getByTitleAsync("${playlistName}")`,
       '  .then((playlist) => {',
@@ -224,7 +225,7 @@ const mediamonkey = {
       '      const tracklist = playlist.getTracklist();',
       '      tracklist.whenLoaded().then(function () {',
       `        options = ${tracklistOptions};`,
-      '        player.shufflePlaylist = false;',
+      `        ${shuffleCommand}`,
       '        player.addTracksAsync(tracklist,options);',
       '      });',
       '    };',
@@ -235,12 +236,13 @@ const mediamonkey = {
 
   playAlbum: function(artist,album,settings) {
     tracklistOptions = this.formatTracklistOptions(settings)
+    shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
       'currentTrack=player.getCurrentTrack();',
       `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\" AND Album=\\"${album}\\"', -1);`,
       'tracklist.whenLoaded().then(function () {',
       `  options = ${tracklistOptions};`,
-      '  player.shufflePlaylist = false;',
+      `  ${shuffleCommand}`,
       '  player.addTracksAsync(tracklist,options);',
       '});',
     ];
@@ -249,11 +251,12 @@ const mediamonkey = {
 
   playArtist: function(artist,settings) {
     tracklistOptions = this.formatTracklistOptions(settings)
+    shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
       `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\"', -1);`,
       'tracklist.whenLoaded().then(function () {',
       `  options = ${tracklistOptions};`,
-      '  player.shufflePlaylist = false;',
+      `  ${shuffleCommand}`,
       '  player.addTracksAsync(tracklist,options);',
       '});',
     ];
@@ -408,6 +411,23 @@ const mediamonkey = {
     }
 
     return JSON.stringify(options);
+  },
+
+  formatPlayerShuffleOnPlaylist: function(settings={}) {
+    const playerShuffleOnPlaylist = (settings.playerShuffleOnPlaylist===undefined) ? defaults.playerShuffleOnPlaylist : settings.playerShuffleOnPlaylist;
+    
+    switch(playerShuffleOnPlaylist) {
+      case "Retain":
+        shuffleCommand = ';';
+        break;
+      case "On":
+        shuffleCommand = `player.shufflePlaylist = true;`;
+        break;
+      case "Off":
+        shuffleCommand = `player.shufflePlaylist = false;`;
+        break;
+    }
+    return shuffleCommand;
   },
 
   runInMediamonkey: function(expression,id=1,returnByValue=false,awaitPromise=false){

@@ -42,11 +42,13 @@ class PropertyInspector extends WebSocketUtils {
       setupCheckbox("shuffle-playlist-checkbox","shufflePlaylist",defaults.shufflePlaylist);
       setupCheckbox("sort-by-album-checkbox","sortByAlbum",defaults.sortByAlbum);
       setupInput("playlist-position-select","playlistPosition",defaults.playlistPosition);
+      setupInput("player-shuffle-on-playlist-select","playerShuffleOnPlaylist",defaults.playerShuffleOnPlaylist);
     } else if(action==actions.playartist || action==actions.playalbum){
       setupCheckbox("start-playback-checkbox","startPlayback",defaults.startPlayback);
       setupCheckbox("shuffle-playlist-checkbox","shufflePlaylist",defaults.shufflePlaylist);
       setupInput("playlist-position-select","playlistPosition",defaults.playlistPosition);
-
+      setupInput("player-shuffle-on-playlist-select","playerShuffleOnPlaylist",defaults.playerShuffleOnPlaylist);
+      
       setupInput("artist-name-input","artist",defaults.artist);
       setupCheckbox("display-artist-checkbox","showArtist",defaults.showArtist);
       setupInput("title-width-input","maxTitleWidth",defaults.maxTitleWidth,true)

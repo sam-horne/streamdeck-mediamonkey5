@@ -7,6 +7,7 @@ const defaults = {
   playlistName: "",
   startPlayback: true,
   shufflePlaylist: false,
+  playerShuffleOnPlaylist: "Off",
   sortByAlbum: false,
   playlistPosition: "Clear",
   useCurrentTrack: true,
