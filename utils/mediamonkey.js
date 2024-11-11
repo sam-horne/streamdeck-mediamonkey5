@@ -238,7 +238,6 @@ const mediamonkey = {
     tracklistOptions = this.formatTracklistOptions(settings)
     shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
-      'currentTrack=player.getCurrentTrack();',
       `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\" AND Album=\\"${album}\\"', -1);`,
       'tracklist.whenLoaded().then(function () {',
       `  options = ${tracklistOptions};`,
