@@ -238,7 +238,7 @@ const mediamonkey = {
     tracklistOptions = this.formatTracklistOptions(settings)
     shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
-      `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\" AND Album=\\"${album}\\"', -1);`,
+      `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\" AND Album=\\"${album}\\" ORDER BY CAST(TrackNumber AS INTEGER)', -1);`,
       'tracklist.whenLoaded().then(function () {',
       `  options = ${tracklistOptions};`,
       `  ${shuffleCommand}`,
@@ -252,7 +252,7 @@ const mediamonkey = {
     tracklistOptions = this.formatTracklistOptions(settings)
     shuffleCommand = this.formatPlayerShuffleOnPlaylist(settings)
     var commands = [
-      `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\"', -1);`,
+      `var tracklist = app.db.getTracklist('SELECT * FROM Songs WHERE Artist=\\"${artist}\\" ORDER BY album,CAST(TrackNumber AS INTEGER)', -1);`,
       'tracklist.whenLoaded().then(function () {',
       `  options = ${tracklistOptions};`,
       `  ${shuffleCommand}`,
